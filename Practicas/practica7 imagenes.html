@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>practica 7 imagenes</title>
+</head>
+
+<body>
+    <p style="font-size: 22px"><b>Esta practica es sober imagenes y sus formas de llamarlas y atributos<br /></b></p>
+
+    <h1>Imagenes externas de otros folders</h1>
+    <!--solo especifica la ruta del subfolder donde está-->
+    <img alt ="Imagen guitarra" src="images/guitar.jpg" width="85" height="170" />
+    <br /><h1>Imagen de otro lugar solo se especifica el enlace completo a la imagen</h1>
+    <img  alt ="background image otro lado" src ="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=abstract-background-blur-255379.jpg&fm=jpg" width="250" height="250"/>
+
+    <h1>Imagen como link solo se anida dentro de la etiqueta a</h1>
+    <br />
+    <a href="practica4 (estilos_formato).html">
+        <img alt="imagen enlace a otra pagina" src="images/background2.jpg" width="270" height="270"/>
+    </a>
+
+    <h2>estilo float para imagenes</h2>
+    <p>
+        <img src="images/bass.jpg" alt="bajo" style="float:right;width:100px;height:180px;">
+        La imagen va a flotar a la derecha
+    </p>
+    <br />
+    <p>
+        <img src="images/bass.jpg" alt="bajo" style="float:left;width:100px;height:180px;">
+        La imagen va a flotar a la izquierda
+    </p>
+    <h2>Map Element en imagenes, sirve para ubicar espacios especificos con eventos especificos para cada espacio</h2>
+    <br />
+
+    <img src="images/background.jpg" alt="map" usemap="#mapa" />
+    <map name="mapa">
+        <area href="practica1 (basic a elements).html" alt="practica1" shape="circle" , coords="20, 20, 20, " />
+        <area href="practica5 qoutes.html" alt="practica1" shape="rect" , coords="50, 100, 120, 140" />
+    </map>
+
+    <h1 style="background-image:url('images/background2.jpg')">este es un header h1 con una imagen de fondo atributo background-image</h1>
+
+</body>
+</html>

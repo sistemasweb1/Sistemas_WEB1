@@ -1,0 +1,39 @@
+﻿/*Comentarios en css*/
+h3
+{
+    background-color: #BB00BB;
+    color: rgb(144, 189, 0);
+    font-size: 155%;
+}
+
+h4
+{
+    background-color: #AAFFAA;
+    color: rgb(120, 10, 240);
+    font-size: 185%;
+}
+
+pre
+{
+    font-family: Arial;
+    font-size: 18px;
+    color: brown;
+    border: 4px solid #555555;
+    padding: 30px;
+}
+
+#header3
+{
+    background-color: #586438;
+    color: rgb(10, 140, 200);
+    font-size: 178%;
+}
+
+.parrafo
+{
+    font-family: Arial;
+    font-size: 21px;
+    color: red;
+    border: 4px solid #18509f;
+    padding: 15px;
+}

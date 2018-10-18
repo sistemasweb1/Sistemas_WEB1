@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>practica 13 forms</title>
+</head>
+<body>
+    <h1>forms es un contenedor de elementos que recibiran datos del usuario </h1>
+    <br />
+    <form>
+        <p style="font-size:22px;">Se utilizan etiquetas de tipo input, de las cuales existen diferentes tipos
+        que se diferencian en el atributo type<br /> <b>Ejemplos: <br /></b></p> 
+   
+        Caja para ingresar texto: <input type="text" value="cajita que se reinicia" name="caja"/>
+        <br />boton: <input type="submit" value="enter"/>
+        <br /><br />
+        radio botones: <br />
+        <input type="radio" name="sexo" value="hombre" />Hombre<br />
+        <input type="radio" name="sexo" value="mujer" />Mujer<br />
+
+        <br /><br />
+        En el atributo action, se define que accion hara la form, o a donde se redireccionara<br />
+        En el atributo method, es para saber como manda los datos, si por get o por post<br />
+        (get muestra los datos en navegador bar y post no )<br />
+        <h2>Mas tipos de elementos de las forms</h2>
+        <select name="comida">
+            <option value="Pizza">Pizza</option>
+            <option value="Tacos" selected>Tacos</option>
+            <option value="Burros">Burros</option>
+            <option value="Otra">Otra cosa</option>
+        </select>
+        <br /><br />
+        <textarea rows="4" cols="25" name="parrafo"></textarea>
+        <br /><br />Contraseña: <input type="password" name="contra"/>
+        <input type="reset" />
+        <br />
+        Selecciona un archivo: <input type="file" name="myFile"><br />
+        Numero del 1 al 5: <input type="number" name="quantity" min="1" max="5">
+    </form>
+
+    <p style="font-size:22px;">Existen diferentes atributos para los input
+        1. El value especifica el valor inicial del input<br />
+        2. El readonly especifica que solo se puede leer de ese input<br />
+        3. El disabled no cierra y no deja que le decn click ni nada<br />
+        4. El size pone el tamaño del input por lo general son del text<br />
+        5. el maxlenght especifica el maximo numero de caracteres que permite entrar<br />
+        6. Formaction especifica una accion para un submit diferente a la accion que esta en el form ya <br />
+        7. El atributo form le das el id del form que quieres asignar el input, cuando esta fuera del form <br />
+        8. Requires tienes que llenarlo de ley
+
+    </p>
+</body>
+</html>

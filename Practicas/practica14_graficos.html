@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-mx" >
+<head>
+    <meta charset="utf-8" />
+    <title>practica 14 graficos HTML</title>
+</head>
+<body>
+    <h1>Graficos en HTML</h1>
+    <br />
+    <canvas id="primer_canvas" width="380" height="350" style="border: 10px solid #555555">
+    </canvas>
+    <script>
+        var c = document.getElementById("primer_canvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(0, 198);
+        ctx.lineTo(200, 350);
+        ctx.stroke();
+
+
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 10, 50);
+    </script>
+
+
+    <br /><br />
+    <h2>Ahora tenemos un svg en html</h2>
+    <br />
+    <svg width="400" height="100">
+        <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+    </svg>
+
+    <h1>Por ultimo podemos meter a google maps en nuestra pagina html</h1>
+    <br />
+    <div id="map" style="width:450px; height:550px; background: yellow;"></div>
+    
+    
+    <script>
+    function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(31.68, -106.44),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</body>
+</html>

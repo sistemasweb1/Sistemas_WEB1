@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Listas en html y sus atributos</h1>
+    <br />
+    <h3>lista ul sin ordenar con estilos diferentes de puntaje</h3>
+    <ul style="list-style-type:square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul> 
+    <br />
+    
+    <h3>misma lista ul sin ordenar con otro estilo diferentes de puntaje</h3>
+    <ul style="list-style-type:none">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul> 
+
+    <h2>lista ordenada con otro tipo de puntaje</h2>
+    <h3>existen puntajes de tipo A, a, 1, I, i para las ol</h3>
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <h2>Lista de descripcion</h2>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl> 
+
+    <h2>Lista ordenada con atributo start, que empieza a contar 
+    desde donde se le indica en este caso desde 50</h2>
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    
+    <h1 style="text-align: center">Lista horizontal o menu de navegacion con css</h1>
+    <h2>me puede servir para mi proyecto final</h2>
+    <style>
+        .ul1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        .l1 {
+            float: left;
+        }
+
+            .l1 a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+                .l1 a:hover {
+                    background-color: #111111;
+                }
+    </style>
+
+        <h2>Navigation Menu</h2>
+        <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+        <ul class="ul1">
+            <li class="l1"><a href="#home">Home</a></li>
+            <li class="l1"><a href="#news">News</a></li>
+            <li class="l1"><a href="#contact">Contact</a></li>
+            <li class ="l1"><a href="#about">About</a></li>
+        </ul>
+
+    <br /><br /><br />
+
+
+    <h1>Esta seccion es sobre el div y el span</h1>
+    <h2>div, es un bloque como un contenedor, o group box</h2>
+    <h2>Mientras que el span es un elemento dentro de una linea, solo tomara el espacio ese chiquito que esta dentro de la etiqueta</h2>
+    <h3>ejemplos!!!</h3><br />
+    <h2>DIV</h2><br />
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div> 
+
+    <h1>My <span style="color:red">Important</span> Heading</h1>
+
+
+    </body>
+</html>

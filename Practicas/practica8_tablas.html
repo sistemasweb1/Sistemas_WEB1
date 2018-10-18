@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-mx">
+<head>
+    <meta charset="utf-8" />
+    <title>Practica 8 tablas</title>
+</head>
+
+<body>
+    <h1>Esta sección para tablas</h1>
+    <br />
+    <style>
+        table, th, td 
+        {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        table 
+        {
+            border-spacing: 15px;
+        }
+
+        
+        .tabla, .cabeza, .datos
+        {
+            border: 10px solid blue;
+            padding: 12px;
+            border-collapse: collapse;
+        }
+                        
+        .cabeza, .datos
+         {
+            padding: 4px;
+         }
+
+         .cabeza
+         {
+            text-align: left;
+         }
+                
+    </style>
+
+    <table style="width:100%">
+        <tr>
+            <th>encabezado1</th>    
+            <th>encabezado2</th>
+            <th>encabezado3</th>
+        </tr>
+        
+        <tr>
+            <td>0,0</td>
+            <td>0,1</td>
+            <td>0,2</td>
+        </tr>
+
+        <tr>
+            <td>1,0</td>
+            <td>1,1</td>
+            <td>1,2</td>
+        </tr>
+    </table>
+
+    <br /><br />
+    <h2>tabla con otras ediciones</h2>
+    <table class="tabla" style="width:100%">
+        <tr >
+            <th class="cabeza">encabezado1</th>
+            <th class="cabeza">encabezado2</th>
+            <th class="cabeza">encabezado3</th>
+        </tr>
+
+        <tr>
+            <td class="datos">0,0</td>
+            <td class="datos">0,1</td>
+            <td class="datos">0,2</td>
+        </tr>
+
+        <tr>
+            <td class="datos">1,0</td>
+            <td class="datos">1,1</td>
+            <td class="datos">1,2</td>
+        </tr>
+     </table>
+
+        <h2>tabla con otras ediciones diferentes</h2>
+        <table class="tabla" style="width:100%">
+            <tr>
+                <th class="cabeza">encabezado1</th>
+                <th colspan="2" class="cabeza">encabezado2</th>
+            </tr>
+
+            <tr>
+                <td class="datos">0,0</td>
+                <td class="datos">0,1</td>
+                <td class="datos">0,2</td>
+            </tr>
+
+            <tr>
+                <td class="datos">1,0</td>
+                <td class="datos">1,1</td>
+                <td class="datos">1,2</td>
+            </tr>
+        </table>
+
+    <h2>tabla con otras ediciones diferentes mas mas</h2>
+    <table class="tabla" style="width:100%">
+        <tr>
+            <th class="cabeza">encabezado1</th>
+            <td>dato</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2" class="cabeza">encabezado2</th>
+            <td>dato2</td>
+        </tr>
+    </table>
+
+
+    <h2>tabla con etiqueta caption es como un titulo</h2>
+    <table class="tabla" style="width:100%">
+       <caption>Titulo de la tablita bonita</caption>
+         <tr>
+            <th class="cabeza">encabezado1</th>
+            <td>dato</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2" class="cabeza">encabezado2</th>
+            <td>dato2</td>
+        </tr>
+    </table>
+</body>
+</html>

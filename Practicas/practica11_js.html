@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-mx" >
+<head>
+    <meta charset="utf-8" />
+    <title>practica 11</title>
+</head>
+<body>
+    <h1>Comenzamos con Javascript</h1>
+    <p style="font-size: 18px">Javascript es entrando ya a la parte
+    mas funcional de las paginas web, para mi ver, es una especia de back end, debido a que
+    es una programacion muy funcional y ne base a instrucciones, no tanto de estilo, </p>
+    <p style="font-size: 18px;"><br />Se maneja mucho tambien por metodos, los metodos se aplican en los objetos o etiquetas
+        los metodos son eventos, como al dar click, o al pasar el mosue por encima, javascript describe 
+    que sucede al realizar esa accion, y esto se realiza por medio de instrucciones y funciones
+       tambien tiene su etiqueta script.<br /><span style="font-size: 25px; ">Ejemplos: </span><br />
+    </p>
+
+    <button onclick="document.getElementById('fecha').innerHTML = Date()" type="button">Click para desplegar fecha y hora</button>
+    <p style ="font-size:25px;" id="fecha">Este parrafo cambiara al dar click al boton, por medio del id y la funcion dentro de la misma etiqueta del boton, llamando al evento</p>
+    <br /><br />
+    <p style="font-size: 22px;">Tambien se pueden cambiar imagenes y muchas propiedades de etiquetas segun la funcion
+    que se desee programas<br />
+    Esta funcion cambia la imgaen segun se de click al boton.<br /><br /></p>
+
+    <img id="imagen" src="images/guitar.jpg" width="150" height="250"/>
+    <br /><br />
+    <button onclick="cambio(0)">mostrar guitarra</button>
+    <button onclick="cambio(1)">mostrar bajo</button>
+
+
+    <script>
+        function cambio(seleccion) {
+            if (seleccion == 0) {
+                document.getElementById('imagen').src="images/guitar.jpg";
+            }
+            else {
+                document.getElementById('imagen').src = "images/bass.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

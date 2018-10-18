@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>practica 6 css</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+    <h1 id="css">CSS</h1>
+    <p style="font-size: 150%">Existen 3 tipos de tener estilo css en una pagina html.
+    <br />Primero dentro de la linea como atributo de cada etiqueta<br />
+    Segundo como interno, esto es creando una etiqueta style y todo el css va dentro
+    <br />El ultimo es externo, creando un documento aparte de puro css y referenciandolo<br />
+    </p>
+    <h1 style="color:blue;">Heading azul con css en la etiqueta</h1> 
+
+    <!--etiqueta <style> todo el codigo css va dentro y afecta la pagina html y elementos mencionados en el css-->
+
+    <style>
+        body{ background-color: #CCCCCC;}
+        p{
+            color: red;
+            font-size: 165%;
+        }
+    </style>
+    <br />
+    <p>Los siguientes elementos restantes de esta página contienen,
+    css pero desde un documento css externo, referenciado desde <br />
+    el inicio de la pagina.</p>
+    <br /><br />
+    <h3>Este es un header h3 con css externo</h3>
+    <h4>Este es un header h4 con css externo</h4>
+    <h3>Este es otro header h3 con css externo</h3>
+    <pre>Este es un parrafo pre que como habiamos quedado
+        Respetaba los saltos de linea y espacio, con un formato
+        Predefinidio que tambien se puede editar con css
+        este pre por ejemplo tiene tambien css externo</pre>
+    <!--CSS CON ELEMENTOS DIFERENTES POR ID Y CLASS-->
+    <h3 id="header3">Este es otro header h3 con css externo diferenciado por el id</h3>
+    
+    <p class="parrafo">
+        (Párrafo diferenciado por class)
+        Los siguientes elementos restantes de esta página contienen,
+        css pero desde un documento css externo, referenciado desde <br />
+        el inicio de la pagina.
+    </p>
+
+    <p class="parrafo">
+        En los enlaces se puede hacer llamadas desde paginas internas, en la misma carpeta, proyecto 
+        solo especificando la ruta, o a paginas externas ingresando el url completo.(un ejemplo 
+        son las referencias a las paginas de css, y a los enlaces a otras paginas) o a otras cosas
+        dentro de la misma pagina utilizando el id de esa etiqueta
+    </p>
+
+    <a title="enlace a practica 1" href="practica1 (basic a elements).html">Enlace a pagina dentro de la misma carpeta (practica 1)</a>
+    <br /><br />
+    <a title="enlace a otra pagina" href="https://www.google.com">Enlace a gugul</a>
+    <br /><br />
+    <a title="enlace a la misma pagina" href="#css">Enlace a otra parte de la misma pagina, solo se usa el # seguido del id</a>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-mx">
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0" />
+    <title>practica 12 responsive</title>
+</head>
+<body>
+    <h1>Responsive, o auto resize en html</h1>
+    <p style="font-size:22px;">En la etiqueta meta se agrego el atributo content, tambien se ven
+    otros metodos para responsive<br /><b>Ejemplo:</b> </p>
+    <h2>Imagen con width property en porcentaje</h2>
+    <img src="images/background2.jpg" style="width:100%;"/>
+    <br /><br />
+    <img src="images/background.jpg" style="max-width:100%; height:auto;"/>
+
+    <h2>Diferentes imagenes segun el ancho y tamaño del browser</h2>
+    <picture>
+        <source srcset="images/guitar.jpg" media="(max-width: 600px)">
+        <source srcset="images/background.jpg" media="(max-width: 1500px)">
+        <source srcset="images/background2.jpg">
+        <img src="background.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+    <br /><br />
+    <h2>Tambien se puede mostrar texto en pantalla en formatos diferentes</h2>
+    <code>
+        Codigo como de programacion: <br />
+        x = 5;<br>
+        y = 6;<br>
+        z = x + y;
+    </code> 
+
+    <p>este es codigo de keyboard: Guarda presionando <kbd>Ctrl + S</kbd></p> 
+    <p>Este es otro formato de output para mostrar mensajes en etiqueta samp <samp>Error!</samp></p>
+    
+        <p>Formato de escritura para variables y ecuaciones:  
+        <var>E</var> =<var>mc</var><sup>2</sup>. </p>
+
+    <h2>Entidades</h2>
+    <p style="font-size:22px;">Nos sirven para insertar caracteres que son reservados o el browser los reconoce mal o no los reconoce si se insertan dierctamente, como el mayor que y menor que
+    para esto se escriben con la sintaxis &nombre_de_identidad o $#numero_identidad. <br />Ejemplos: <br /><br /></p>
+    
+    Esto es un mayor que: &#60;
+    <br />Esto es un menor que: &#62;
+    <h3> tambien se puede poner el nombre con el que este guardado, numero en normal y en hexa tambien</h3>
+    <p>Para todo:  &forall;</p>
+    <p>Para todo: &#8704;</p>
+    <p>Para todo:  &#x2200;</p> 
+
+</body>
+</html>

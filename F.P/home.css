@@ -1,0 +1,54 @@
+﻿.home-botton {
+    width: 155px;
+    height: 155px;
+    background-image: url("home.jpg");
+    background-size: 150px;
+}
+
+.boton{
+    text-align: right;
+}
+.logo
+{
+    position: center; 
+    width: 130px;
+    height: 150px;
+}
+
+.UACJ
+{
+    font-size: 29px;
+}
+
+.head
+{
+    background-color: #AAAAFF;
+}
+
+.menu 
+{
+    width: 100%;
+    text-align: center;
+    background-color: #3333FF;
+}
+
+table,  html, div
+{
+    width: 100%;
+
+}
+
+.listas{
+    font-size: 42px;
+    font-style: oblique;
+}
+
+.layout {
+    width: 100%;
+    text-align: center;
+}
+.opciones
+{
+    width: 100%;
+    height: 100%;
+}
