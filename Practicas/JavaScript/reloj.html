@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+
+<body onload="reloj()">
+    <script>
+
+
+        
+
+        function reloj() //reloj
+        {
+        	var fecha = new Date();
+            var segundos = fecha.getSeconds();
+            var minutos = fecha.getMinutes();
+            var horas = fecha.getHours();
+            var ap;
+            if (horas >= 12)
+            {
+                horas = horas - 12;
+                ap = "PM"
+            }
+            else
+            {
+                ap = "AM";
+            }
+            document.getElementById("reloj").innerHTML = (horas+" : "+minutos+" : "+segundos+" "+ap+"<br>");
+           	setTimeout("reloj()", 1000);
+        }
+
+
+
+
+        function temporizador(hours, minutes, seconds) //funcion para ir retrocediendo en el tiempo
+        {
+        	horas= hours;
+        	minutos= minutes;
+        	segundos=seconds;
+
+					if(segundos==0)
+					{
+						if(minutos!=0)
+						{
+							minutos--;
+							segundos = 59;
+						}
+						else
+						{
+							if(horas!=0)
+							{
+								horas--;
+								minutos=59;
+							}
+							else
+							{
+									
+							}
+						}
+					}
+					else
+					{
+						segundos--;
+					}
+
+
+				document.getElementById("testdiv").innerHTML= (horas+" : "+minutos+" : "+segundos+"  <br>");
+				
+			
+
+			if(segundos==0 && minutos==0 && segundos==0)
+			{
+
+				alert("se acabo el tiempo!");
+			}
+			else
+			{
+				setTimeout("temporizador(horas, minutos, segundos)", 1000);
+			}
+
+	
+
+        }
+
+
+    </script>
+
+    <div>
+        <h2>Reloj</h2>
+        <p id="reloj"></p>
+        <br /><br />
+        <h2>Temporizador</h2>
+        <p id ="testdiv"></p>
+    </div>
+    <form>
+    	Horas: <input type ="number" id= "horas"/>
+    	Minutos:<input type = "number" id = "minutos"/>
+    	Segundos: <input type = "number" id = "segundos"/>
+       <br /><br /> <input type="button" onclick="temporizador(document.getElementById('horas').value, document.getElementById('minutos').value , document.getElementById('segundos').value )" value="Iniciar" id="boton_temporizador"/>
+    </form>
+</body>
+</html>

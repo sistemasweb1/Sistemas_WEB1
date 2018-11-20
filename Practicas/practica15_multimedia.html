@@ -2,12 +2,30 @@
 
 <html lang="es-mx">
 <head>
-    <meta charset="utf-8" />
-    <title>practica 15 multimedia</title>
+    <title>Práctica 15 multimedia en HTML</title>
 </head>
 <body>
-    <h1>Multimedia en HTML, etiquetas que son para insertar elementos multimedia</h1>
-    <br />
+    <h1>Inserción de elementos multimedia en HTML</h1>
+    <h3>Estos formatos son por lo general de HTML5 ya que son elementos multimedia
+        más avanzados y complejos</h3>
 
+    <h3>Etiquetas: video, audio, object, iframe para videos en youtube</h3>
+    <h2>Ejemplos:<br /></h2>
+    <p>video<br /></p>
+    <video width="450" height="545" controls ><!--Habilita los controles en el video-->
+        <source src="algo.mp4" type="video/mp4"/>
+        Si aparezco es que no existe el video o el browser no lo soporta
+    </video>
+    <h4>Audio</h4>
+    <audio controls>
+        <source src="algo.mp3" type="audio/mp3"/>
+        Tu browser no soporta este tipo de audio
+    </audio>
+
+    <h4>Object y embed elements, son para insertar plug ins en la pagina en HTML5 </h4>
+    <object width="400" height="50" data="bookmark.swf">hola akjh</object> 
+
+    <h4>Videos de youtube, son insertados en la etiqueta iframe así: Para autoplay solo agrega '?autoplay=1' al final de cada link</h4>
+    <iframe width="520" height="450" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
 </body>
 </html>

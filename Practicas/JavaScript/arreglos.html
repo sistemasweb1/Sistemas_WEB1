@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>JS</head>
+<body>
+	<h2>Arreglos en JS, se utilizan bajo la misma metodologia de los arreglos, variables con varias casillas de espacio de memoria asignados</h2>
+
+	<h3>se pueden instanciar muy facilemente poniendo los valores directamente asi:</h3>
+	<h3>var arreglo = ['carro', 'avion', 'barco'];</h3>
+	<button type ="button" onclick="array()">click para ver arreglo</button>
+	<script>
+
+		function array()
+		{
+			var arreglo = ["carro","avion","barco"];
+
+			for(var i = 0; i<arreglo.length; i++)
+			{
+				alert("Iteracion "+(i+1)+": "+arreglo[i]);
+			}
+		}
+		
+	</script>
+
+<h2>Tambien existen diferentes metodos para manejar los arreglos, uno de ellos es el metodo push y pop, </h2>
+
+Antes de pop: <p id="demo1"></p>
+Valor de variable que almacena arreglo.pop(): <p id="demo2"></p>
+Arreglo despues del pop: <p id="demo3"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+document.getElementById("demo2").innerHTML = fruits.pop();
+document.getElementById("demo3").innerHTML = fruits;
+</script>
+
+
+
+</body>
+
+</html>

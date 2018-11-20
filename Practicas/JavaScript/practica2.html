@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-mx" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>practica 1 js</title>
+</head>
+<body>
+    <h2>Al dar click aparecera la fecha y hora hasta el momento del click</h2>
+
+    <p id="fecha"></p>
+
+
+    <button type="button" onclick="document.getElementById('fecha').innerHTML= Date()">Fecha y Hora</button>
+
+    <h2>Puedes cambiar el contenido no solo con la fecha, intenta este otro boton</h2>
+
+    <button type="button" onclick="document.getElementById('fecha').innerHTML= 'hola mundo!'">Click!</button>
+
+
+
+    <h2>Puedes cambiar otros atributos de elementos html com oatributos de estilo y demas</h2>
+    <p id="demo">Soy un texto!</p>
+    
+    <button type="button" onclick="document.getElementById('demo').style.fontSize = '30px';">Hazme crecer</button>
+    <button type="button" onclick="document.getElementById('demo').style.display='none';">Escondeme</button>
+    <button type="button" onclick="document.getElementById('demo').style.display = 'block';">Muestrame</button>
+    
+    <!--Asi como en css se puede hacer una etiqueta script y meter todo lo de javascript que quieras
+        dentro de tu mismo html, o tambien se referencia desde una hoja externa (referencia en head)-->
+    <script> 
+        function inner() { document.getElementById('demo2').innerHTML = 5 + 6; }
+        
+        function window_alert() { window.alert(5 + 6); }
+        function console() { console.log(5 + 6+"fdgjahdgvlajdshgfajfxh gljdshgf d"); }
+    </script>
+    
+    <h2>Estas son algunas formas de imprimir en pantalla con javascript</h2>
+    <h3>A partir de aqui se comienzan a ejecutar las instrucciones  desde etiquetas script en el documento y 
+    desde archivos externos rferenciados (mas informacion en comentarios en codigo)</h3>
+    <p style="font-size:15px;">Escribir 11 de diferentes formas</p>
+    
+    <button type="button" onclick="inner()">11 con Inner HTML</button>
+    <p id="demo2"></p>
+    <button type="button" onclick="window_alert()">11 con alert</button>
+
+    <br /><button type="button" onclick="console()">11 con console</button>
+    <h3>JS es una gran ayuda con la parte logica de una pagina web, por lo tanto
+    tambien utiliza variables y metodos logicos como en otros lenguajes de programacion, 
+    de hecho el lenguaje y syntaxis no se alejan mucho del lenguaje c++ o phyton</h3>
+    <h4>Esta perte se encuentra en el .js externo</h4>
+    <script src="practias.js"></script>
+    Numero1: <input type="number" id="caja1"/>
+    Numero2: <input type="number" id="caja2"/>
+    <button type="button" onclick="suma()">Obtener suma de ambos numeros</button>
+    <p id="resultado"></p>
+
+    <h3>Para instanciar una variable solo se necesita la palabra reservada 'var', y el nombre de la variable
+    js, no requiere que declares el tipo de variable, y los operadores y palabras para if, for y while y demas son iguales
+    </h3>
+    <h4>Para concatenar texto en js es muy facil, en las variables solo se usa el operador '+' entre variables o texto entre comillas </h4>
+    <h4>Ejemplo: Ingresa dos texto y los mostrare ambos separados por un espacio, con una sola funcion</h4>
+    Texto 1:<input type="text" id="box1" />
+    Texto 2:<input type="text" id="box2" />
+    <br /><button type="button" onclick="concatenar()">Muestra resultado</button>
+    <p id="concatenacion">< /p>
+
+
+</body>
+</html>
