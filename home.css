@@ -98,7 +98,8 @@ table,  html, div
 {
     float:left ;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 50px;	
+    width: 100%;
 
 }
 
