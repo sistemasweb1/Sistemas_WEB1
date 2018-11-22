@@ -1,0 +1,69 @@
+﻿
+.header
+{
+    background-image: url('resources/index.jpg');
+    width: 100%;
+    font-size: 48px;
+    color: brown;
+    font-family: 'Brush Script MT';
+    text-align: center;
+}
+
+.header2
+{
+    font-family:Algerian;
+    font-size: 52px;
+    text-align:center;
+}
+
+.parrafo
+{
+    font-family:Britannic;
+    font-size: 32px;
+    text-align: center;
+}
+
+body
+{
+    background-image: url('resources/nosotros_background.jpg');
+
+}
+
+
+.boton-mision
+{
+    width: 25%;
+    height: 150px;
+    border:solid brown 12px;
+    background-color: brown;
+    font-family: 'Brush Script MT';
+    text-align: center;
+    font-size:88px;
+}
+
+.boton-vision
+{
+    
+    width: 25%;
+    height: 150px;
+    border:transparent 12px;
+    background-color: brown;
+    font-family: 'Brush Script MT';
+    text-align: center;
+    font-size:88px;
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+.boton-retorno
+{
+    border: 0px;
+    background-color: green;
+    font-family: 'Brush Script MT';
+    color: white;
+    text-align: center;
+    font-size:30px;
+}

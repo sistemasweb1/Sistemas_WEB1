@@ -1,0 +1,23 @@
+body
+{
+	background-color:#aaaaff;
+}
+
+.header
+{
+	background-color:#9090ff;
+}
+.boton-retorno
+{
+    border: 0px;
+    background-color: #0000ee;
+    font-family: 'Brush Script MT';
+    color: white;
+    text-align: center;
+    font-size:30px;
+}
+li
+{
+		padding:2px;
+		font-size: 25px;
+}

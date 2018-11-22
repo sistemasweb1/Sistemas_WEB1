@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Institutos y Campus</title>
+</head>
+<body>
+    <button type="button" class="boton-retorno" onclick="window.location.href = 'index.html'">Regresar</button>
+
+    <div class="header">
+        <h1>UNIVERSIDAD AUTÓNOMA DE CIUDAD JUÁREZ</h1>
+        <link rel="stylesheet" href="institutos.css" />
+
+    </div>
+	
+	<script>
+		function redirect(campus)
+		{
+			switch(campus)
+			{
+			
+			case 1:
+			window.location.href="iit.html";
+				break;
+			
+			case 2:
+			window.location.href="iada.html";
+				break;
+			
+			case 3:
+			window.location.href="icb.html";
+				break;
+				
+			case 4:
+			window.location.href="icsa.html";
+				break;
+			
+			case 5:
+			window.location.href="cuda.html";
+				break;
+				
+			case 6:
+			window.location.href="cu.html";
+				break;
+				
+			case 7:
+			window.location.href="ncg.html";
+				break;
+				
+			case 8:
+			window.location.href= "cuau.html";
+				break;
+			}
+		
+		}
+	</script>
+	
+    <table class="institutos">
+        <tr>
+            <td><button type="button" onclick="redirect(1)" class="iit"><p  class="piit">IIT</p></button></td>
+            <td><button type="button" onclick="redirect(2)" class="iada"><p class="piada">IADA</p></button></td>
+            <td><button type="button" onclick="redirect(3)" class="icb"><p class="picb">ICB</p></button></td>
+            <td><button type="button" onclick="redirect(4)" class="icsa"><p class="picsa">ICSA</p></button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="redirect(5)" class="cuda"><p class="pcuda">CUDA</p></button></td>
+            <td><button type="button" onclick="redirect(6)" class="cu"><p class="pcu">DMCU</p></button></td>
+            <td><button type="button" onclick="redirect(7)" class="ncg"><p class="pncg">DMNCG</p></button></td>
+            <td><button type="button" onclick="redirect(8)" class="cuahu"><p class="pcuahu">DMC</p></button></td>
+
+
+        </tr>
+    </table>
+</body>
+</html>
